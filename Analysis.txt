@@ -1,0 +1,41 @@
+Run time analysis, Worst-Case Big-O Notation
+worst-case time-complexity
+
+**Task0.py:
+There is no loop in my code.
+Therefor, the worst-case time-complexity is 2O(1), approximately O(1).
+
+**Task1.py:
+There is 2 for-loops with 2 code line inside each of the loop.
+If the length of the input to my algorithm is n, there will be 2n lines of code that will get run inside of each of the for-loop.  
+Therefor, worst-case time-complexity is O(4n+2), approximately O(n).
+
+**Task2.py:
+There is one for-loop and a max() method in my code.
+A max() method has Big O: O(n).
+If the length of the input to my algorithm is n, there will be 2n lines of code that will get run inside of the for-loop. 
+Therefor, the for-loop has Big O: O(2n).
+Method items() has Big O: O(n).
+Therefor, worst-case time-complexity of this algorithm is O(4n+3) approximately O(n).
+
+**Task3.py:
+There is one for-loop and two code line with large time complexity.
+If the length of the input to my algorithm is n, there will be 2n lines of code that will get run inside of the for-loop. 
+    Line #33. for-loop
+        This line has Big O: O(2n)
+    Line #42. code_list_no_dup = list(code_list)
+        This line has Big O: O(n)
+    Line #43. code_list_no_dup.sort()
+        This line has Big O: O(nlogn)
+Therefor, worst-case time-complexity is O(3n+nlogn+2) approximately O(nlogn).
+
+**Task4.py:
+There is two for-loop and 5 code line with large time complexity.
+If the length of the input to my algorithm is n, there will be 2n lines of code that will get run inside of each of for-loop. 
+two for-loops #Big O: 2O(2n) = O(4n)
+tele_num = calls_num.difference(calls_recive_num)  #Big O: O(n)
+tele_num = tele_num.difference(texts_total_num)  #Big O: O(n)
+tele_num_sorted = list(tele_num)  #Big O: O(n)
+tele_num_sorted.sort()  #Big O: O(nlogn)
+Therfore, the total Big O is: O(7n+nlogn+5) approximately O(n).
+
